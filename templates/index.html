@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <center>
+    
+    <img src="{% static "LOGO.svg" %}" alt="">
+    {% for objects in files %}
+    <a href= "{{objects.nativeFile.url}}" download={{objects.nativeFile.url}}> DOWNLOAD APK </a>
+    {% endfor %}
+
+</center>
+</body>
+</html>
