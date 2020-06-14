@@ -184,10 +184,10 @@ class Analysis(APIView):
         tim = 0
         import numpy as np
         import pandas as pd
-        import tensorflow as tf
-        import tensorflow.keras as keras
-        from tensorflow.keras.models import Sequential
-        from tensorflow.keras.layers import Layer, Dense, Activation, Embedding, Flatten, LeakyReLU, PReLU, ELU, BatchNormalization, Dropout
+        # import tensorflow as tf
+        # import tensorflow.keras as keras
+        # from tensorflow.keras.models import Sequential
+        # from tensorflow.keras.layers import Layer, Dense, Activation, Embedding, Flatten, LeakyReLU, PReLU, ELU, BatchNormalization, Dropout
         from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
         from sklearn.model_selection import train_test_split
 
