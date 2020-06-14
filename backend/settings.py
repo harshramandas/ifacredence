@@ -26,7 +26,7 @@ SECRET_KEY = 'itlq_-!azqjxut^i5zrt365cj8=#vsm$_e&@5gfx(739txb1vu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ifacredence.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -134,12 +135,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
-
+STATIC_ROOT = os.path.join(BASE_DIR,"staticfiles")
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR,]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES' : [
