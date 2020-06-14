@@ -26,7 +26,7 @@ SECRET_KEY = 'itlq_-!azqjxut^i5zrt365cj8=#vsm$_e&@5gfx(739txb1vu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ifacredence.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
