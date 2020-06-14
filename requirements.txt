@@ -24,7 +24,7 @@ h5py==2.10.0
 idna==2.9
 importlib-metadata==1.6.1
 joblib==0.15.1
-Keras-Preprocessing==1.1.2
+# Keras-Preprocessing==1.1.2
 lxml==4.5.1
 Markdown==3.2.2
 multitasking==0.0.9
@@ -51,10 +51,10 @@ scipy==1.4.1
 six==1.15.0
 sklearn==0.0
 sqlparse==0.2.4
-tensorboard==2.2.2
-tensorboard-plugin-wit==1.6.0.post3
-tensorflow==2.2.0
-tensorflow-estimator==2.2.0
+# tensorboard==2.2.2
+# tensorboard-plugin-wit==1.6.0.post3
+# tensorflow==2.2.0
+# tensorflow-estimator==2.2.0
 termcolor==1.1.0
 textblob==0.15.3
 threadpoolctl==2.1.0
